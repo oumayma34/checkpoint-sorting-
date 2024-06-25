@@ -1,0 +1,20 @@
+Algorithme TriInsertion
+  Entrée: Un tableau arr de longueur n
+  Sortie: Le tableau arr trié
+
+  Début
+    Pour i de 1 à (n - 1) faire
+      key ← arr[i]
+      j ← i - 1
+      
+      Tant que j ≥ 0 et arr[j] > key faire
+        j ← j - 1
+      Fin Tant que
+      
+      // Insérer key à la position j + 1
+      Insérer key à la position j + 1 dans arr
+      Supprimer l'élément à la position i + 1 dans arr
+    Fin Pour
+
+    Retourner arr
+  Fin
